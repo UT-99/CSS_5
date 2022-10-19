@@ -28,19 +28,19 @@ body{
 #rowone-cardone  {
     height: 65px;
     width:65px;
-    background-color: blueviolet;
+    background-color: rgb(80, 109, 153);
 }
 
 #rowone-cardtwo  {
     height: 65px;
     width:65px;
-    background-color: blueviolet;
+    background-color: rgb(80, 109, 153);
 }
 
 #rowone-cardthird  {
     height: 65px;
     width:65px;
-    background-color: blueviolet;
+    background-color: rgb(80, 109, 153);
 }
 
 /* Second Row  */
@@ -67,19 +67,19 @@ body{
 #rowthree-cardone  {
     height: 65px;
     width:65px;
-    background-color: blueviolet;
+    background-color: rgb(80, 109, 153);
 }
 
 #rowthree-cardtwo  {
     height: 65px;
     width:65px;
-    background-color: blueviolet;
+    background-color: rgb(80, 109, 153);
 }
 
 #rowthree-cardthird  {
     height: 65px;
     width:65px;
-    background-color: blueviolet;
+    background-color: rgb(80, 109, 153);
 }
 
 /* Fourth Row */
@@ -88,8 +88,8 @@ body{
 #rowfour-cardone  {
     height: 53px;
     width:53px;
-    background-color: blueviolet;
-    border: 6px solid blueviolet;;
+    background-color: rgb(80, 109, 153);
+    border: 6px solid rgb(80, 109, 153);
 }
 
 #rowfour-cardtwo  {
@@ -259,7 +259,7 @@ body{
 .seondPage_td{
     height: 150px;
     width: 150px;
-    background-color: rgb(95, 224, 56);
+    background-color: rgb(113, 205, 85);
     
 }
 
@@ -353,34 +353,135 @@ table.secondPageTable {
     vertical-align: super;
 }
 
-#tempdiv{
+/* #tempdiv{
     height: 200px;
     width: 200px;
     background-color: aqua;
-}
+} */
 
 
 /* Third Page animations  */
 #third-body{
     background: url(assets/sky.jpg);
-    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
  #thirdPage-building-div{
     background: url(assets/city.png);
-    background-repeat: repeat-x;    
-    width: 100%;       
-    margin-top: 20%;   
-    height: 40vh;    
+    background-repeat: repeat-x;   
+     
+    width: 900vw;     
+    /* padding-top: 45%;    */
+    height: 190vh;    
+    position: absolute;
+    top: 24%;
     z-index: 2;
+    animation-name: City;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
   
 } 
 
 #thirdPage-road-div{
-    background: url(assets/road.jpg);
+    background: url(assets/road.jpg);       
+    width: 900vw;
+    height: 43vh;
+    position:absolute;
+    background-repeat: repeat-x;     
+    top: 59%;
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+    /* top: 84%;
+     */
+    animation-name: Carmove;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#thirdpage-car{
+    background-image: url(assets/car.png);
+    height: 50vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 30% 50%;
+    position:absolute;
+    top: 50%;
+    left: 30vw;
+    z-index: 4;
+}
+
+.backwheel img{
     position: relative;
-    bottom: 2%;
-    width: 100%;
-    height: 30vh;
-    margin-top: -8vh;
+    width: 90px;
+    height: 90px;
+    top: 94px;
+    left: 34px;
+    animation-name: wheelRotation;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.frontwheel img{
+    position: relative;
+    width: 90px;
+    height: 90px;   
+    left : 310px;
+    animation-name: wheelRotation;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.flag img{
+    height: 9vw;
+    position: absolute;
+    top: 47vh;
+    left: 52vw;
+    z-index: 7;
+}
+
+.sun img{
+    height: 150px;
+    width:150px;
+    position: absolute;
+    top: 5vh;
+    right: 9vw;
+    animation-name: sun;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wheelRotation {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+@keyframes Carmove {
+    100%{
+        transform: translate(-30vw);
+    }
+    
+}
+
+@keyframes City {
+    100%{
+        transform: translate(-30vw);
+    }
+    
+}
+
+@keyframes sun {
+    100%{
+    transform:translate(-5vw);
+    }
 }
