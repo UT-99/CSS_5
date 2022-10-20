@@ -1,6 +1,18 @@
 body{
     background-color: yellow;
+    /* border-left: 10px solid green ; */
+    margin: 0;
+    padding: 0;
+    z-index: 8;
+
+    
+   
 }
+/* .border{
+    border-left: 10px solid green;
+    position: fixed;
+    left: 0;
+} */
 
 /*  First Page CSS  */
 
@@ -150,53 +162,6 @@ body{
 
 
 /* Animation for first Page  Third  Row */
-
-
-/* 
-
-@keyframes rowthree_Pageone{
-    0%{
-        transform: none;
-    }
-
-    12.5%{
-       transform: rotate(45deg);
-    }
-
-    25%{
-        transform: rotate(90deg);
-     }
-
-     37.5%{
-        transform: rotate(135deg);
-     }
-
-     50%{
-        transform: rotate(180deg);
-     }
-
-     62.5%{
-        transform: rotate(225deg);
-     }
-
-     75%{
-        transform: rotate(270deg);
-     }
-
-     87.5%{
-        transform: rotate(315deg);
-     }
-
-     100%{
-        transform: rotate(360deg);
-     }
-
-
-
-     
-
-   } */
-
 
    #rowthree-cardone,#rowthree-cardtwo,#rowthree-cardthird{
     animation-name: rowthree-Pageone;
@@ -363,6 +328,9 @@ table.secondPageTable {
 /* Third Page animations  */
 #third-body{
     background: url(assets/sky.jpg);
+    /* border-left: 10px solid green ; */
+    margin: 0;
+    padding: 0;
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
@@ -372,7 +340,9 @@ table.secondPageTable {
 
  #thirdPage-building-div{
     background: url(assets/city.png);
-    background-repeat: repeat-x;   
+    background-repeat: repeat-x; 
+    
+     
      
     width: 900vw;     
     /* padding-top: 45%;    */
