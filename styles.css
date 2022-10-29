@@ -389,23 +389,24 @@ table.secondPageTable {
 
 .backwheel img{
     position: relative;
-    width: 90px;
-    height: 90px;
-    top: 94px;
-    left: 34px;
+    width: 77px;
+    height: 77px;
+    top: 98px;
+    left: 40px;
     animation-name: wheelRotation;
     animation-timing-function: linear;
-    animation-duration: 2s;
+    animation-duration: 1.4s;
     animation-iteration-count: infinite;
 }
 .frontwheel img{
     position: relative;
-    width: 90px;
-    height: 90px;   
-    left : 310px;
+    width: 77px;
+    height: 77px;  
+    top: 17px; 
+    left : 316px;
     animation-name: wheelRotation;
     animation-timing-function: linear;
-    animation-duration: 2s;
+    animation-duration: 1.4s;
     animation-iteration-count: infinite;
 }
 
